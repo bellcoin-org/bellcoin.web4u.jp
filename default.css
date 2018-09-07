@@ -55,7 +55,6 @@
 	.container
 	{
 		margin: 0px auto;
-		width: 100%;
 	}
 	
 
@@ -468,7 +467,6 @@
 	#welcome
 	{
 		overflow: hidden;
-		width: 1000px;
 		padding: 8em 100px 8em 100px;
 		text-align: center;
 		color: rgba(255,255,255,0.4);
@@ -642,26 +640,37 @@
 		color: #261300;
 	}
 
+	#portfolio .inner
+	{
+		justify-content: space-around;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
 	.column1,
 	.column2,
 	.column3,
 	.column4
 	{
-		width: 282px;
+		width: 22%;
 	}
 	
+	/*
 	.column1,
 	.column2,
 	.column3
 	{
 		float: left;
-		margin-right: 24px;
 	}
 	
 	.column4
 	{
 		float: right;
 	}
+	*/
 
 /*********************************************************************************/
 /* Three Columns                                                                 */
