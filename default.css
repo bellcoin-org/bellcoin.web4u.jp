@@ -9,7 +9,7 @@
 		padding: 0px;
 		background: #1B1B1B;
 		font-family: 'Varela Round', sans-serif;
-		font-size: 11pt;
+		font-size: 12pt;
 		font-weight: 400;
 		color: #000000;
 	}
@@ -316,7 +316,6 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em;
 	}
 
 	#header
@@ -373,6 +372,23 @@
 		color: #FFF;
 	}
 	
+	#logo img
+	{
+		width: 75%;
+		height: 75%;
+		max-width: 512px;
+		max-height: 512px;
+		margin-bottom: 4em;
+	}
+
+	@media (orientation: landscape)
+	{
+		#logo img
+		{
+			max-width: 25% !important;
+			max-height: 25% !important;
+		}
+	}
 
 /*********************************************************************************/
 /* Menu                                                                          */
@@ -396,6 +412,7 @@
 	{
 		display: inline-block;
 		margin-left: 0.50em;
+		margin-bottom: 0.90em;
 		padding: 1em 1.5em;
 		letter-spacing: 0.20em;
 		text-decoration: none;
@@ -467,9 +484,10 @@
 	#welcome
 	{
 		overflow: hidden;
-		padding: 8em 100px 8em 100px;
+		padding: 8em 10%;
 		text-align: center;
 		color: rgba(255,255,255,0.4);
+		min-width: 75%;
 	}
 	
 	#welcome .content
@@ -643,7 +661,8 @@
 
 	#portfolio .inner
 	{
-		justify-content: space-around;
+		flex-wrap: wrap;
+		justify-content: center;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -656,22 +675,10 @@
 	.column3,
 	.column4
 	{
-		width: 22%;
+		min-width: 256px;
+		margin-top: 2em;
+		margin-bottom: 4em;
 	}
-	
-	/*
-	.column1,
-	.column2,
-	.column3
-	{
-		float: left;
-	}
-	
-	.column4
-	{
-		float: right;
-	}
-	*/
 
 /*********************************************************************************/
 /* Three Columns                                                                 */
@@ -742,5 +749,3 @@
 	{
 		border-top-color: #292929;
 	}
-
-	
