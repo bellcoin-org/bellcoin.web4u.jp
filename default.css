@@ -507,6 +507,56 @@
 	}
 
 /*********************************************************************************/
+/* Shop                                                                          */
+/*********************************************************************************/
+
+	#shop
+	{
+		overflow: hidden;
+		padding: 8em 10%;
+		text-align: center;
+		color: rgba(255,255,255,0.4);
+		min-width: 75%;
+	}
+	
+	#shop .content
+	{
+		padding: 0em 8em;
+	}
+	
+	#shop .title h2
+	{
+		color: rgba(255,255,255,1);
+	}
+	
+	#shop a,
+	#shop strong
+	{
+		color: rgba(255,255,255,0.6);
+	}
+
+	#shop .inner
+	{
+		flex-wrap: wrap;
+		justify-content: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	#shop .column1 img,
+	#shop .column2 img,
+	#shop .column3 img,
+	#shop .column4 img
+	{
+		max-width: 256px;
+		margin-top: 2em;
+		margin-bottom: 4em;
+	}
+
+/*********************************************************************************/
 /* Page                                                                          */
 /*********************************************************************************/
 
@@ -670,10 +720,10 @@
 		display: flex;
 	}
 
-	.column1,
-	.column2,
-	.column3,
-	.column4
+	#portfolio .column1,
+	#portfolio .column2,
+	#portfolio .column3,
+	#portfolio .column4
 	{
 		min-width: 256px;
 		margin-top: 2em;
