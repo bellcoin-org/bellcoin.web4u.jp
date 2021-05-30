@@ -524,11 +524,29 @@
 		text-align: center;
 		color: rgba(255,255,255,0.4);
 	}
+
+	#exchange a
+	{
+		text-decoration: none;
+	}
 	
 	#exchange h3
 	{
 		display: block;
 		padding-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1em;
+		color: rgba(255,255,255,1);
+	}
+
+	#exchange h3 object
+	{
+		display: inline-block;
+	}
+
+	#exchange h3 object a
+	{
+		display: block;
 		text-transform: uppercase;
 		font-size: 1em;
 		color: rgba(255,255,255,1);
